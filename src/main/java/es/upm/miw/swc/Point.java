@@ -42,4 +42,8 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public Point diff (Point point1, Point point2) {
+        return (new Point (point1.getX()-point2.getX(),point1.getY()-point2.getY()));
+    }
+
 }
