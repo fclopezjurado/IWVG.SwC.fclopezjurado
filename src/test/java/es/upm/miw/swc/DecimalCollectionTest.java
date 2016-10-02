@@ -37,5 +37,11 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
+    
+    @Test
+    public void testProd() {
+    	this.dc.prod(4);
+    	assertEquals(24, this.dc.sum(), 10e-5);
+    }
 
 }
