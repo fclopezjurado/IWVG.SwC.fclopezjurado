@@ -43,6 +43,6 @@ public class User {
         for (int i=0; i<this.name.length(); i++){
             NamewithDots += this.name.charAt(i)+".";
         }
-        return (NamewithDots);
+        return (NamewithDots.substring(0, NamewithDots.length()-1));
     }
 }
