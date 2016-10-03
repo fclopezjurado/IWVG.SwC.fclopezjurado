@@ -37,4 +37,12 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }
+    
+    public String includePointsInName (){
+        String NamewithDots="";
+        for (int i=0; i<this.name.length(); i++){
+            NamewithDots += this.name.charAt(i)+".";
+        }
+        return (NamewithDots);
+    }
 }
