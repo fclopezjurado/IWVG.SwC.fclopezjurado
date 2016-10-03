@@ -51,10 +51,5 @@ public class UserTest {
     public void testInitials() {
         assertEquals("F.", user.initials());
     }
-    
-    @Test
-    public void testIncludePointsInName() {
-        assertEquals("F.r.a.n", user.includePointsInName());
-    }
 
 }
