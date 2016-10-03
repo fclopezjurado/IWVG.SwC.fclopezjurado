@@ -34,5 +34,11 @@ public class DecimalCollection {
         }
         return higher;
     }
-
+    
+    public void prod(double numberForProducts) {
+        for (int i=0 ; i< collection.size() ; i++) {
+            collection.set(i, this.collection.get(i)*numberForProducts);
+        }
+    }
+    
 }
