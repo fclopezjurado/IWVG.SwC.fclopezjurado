@@ -42,7 +42,6 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
 
-    
     public int moveX(int translation){
     	return this.x + translation;
     }
