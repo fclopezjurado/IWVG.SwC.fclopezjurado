@@ -41,10 +41,5 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
-    public Point diff (Point point) {
-        
-        return (new Point (this.getX()-point.getX(),this.getY()-point.getY()));
-    }
 
 }
