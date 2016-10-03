@@ -53,5 +53,11 @@ public class FractionTest {
 		fraction.sumInt(3);
 	    assertEquals((double)34/9, fraction.decimal(), 0.0001);
 	}
+	 
+	@Test
+	public void testInverse() {
+		fraction.inverseAndProduct(3);
+	    assertEquals((double)27/7, fraction.decimal(), 0.0001);
+	}
 
 }
