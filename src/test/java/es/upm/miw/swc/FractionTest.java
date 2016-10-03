@@ -47,5 +47,11 @@ public class FractionTest {
 	public void testDecimal() {
 	    assertEquals((double)7/9, fraction.decimal(), 0.0001);
 	}
+	
+	@Test
+	public void testSumInt() {
+		fraction.sumInt(3);
+	    assertEquals((double)34/9, fraction.decimal(), 0.0001);
+	}
 
 }
