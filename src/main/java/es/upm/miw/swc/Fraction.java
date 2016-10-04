@@ -70,4 +70,12 @@ public class Fraction {
     	this.numerator = this.denominator * numberForProductOperation;
     	this.denominator = auxNumerator;
     }
+    
+    public Fraction div(Fraction fraction) {
+    	int newNumerator, newDenominator;
+    	newNumerator = this.numerator * fraction.getDenominator();
+    	newDenominator = this.denominator * fraction.getNumerator();
+    	
+    	return new Fraction(newNumerator, newDenominator);
+    }
 }

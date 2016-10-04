@@ -60,4 +60,9 @@ public class FractionTest {
 	    assertEquals((double)27/7, fraction.decimal(), 0.0001);
 	}
 
+	@Test
+	public void testDiv(){
+		Fraction f = fraction.div(new Fraction(2,3));
+		assertEquals((double)21/18, f.decimal(), 0.0001);
+	}
 }
