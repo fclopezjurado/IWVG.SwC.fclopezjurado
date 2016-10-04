@@ -62,7 +62,8 @@ public class FractionTest {
 	
 	@Test
 	public void testDiv() {
-		this.fraction.div(new Fraction(3, 5));
+		Fraction f = new Fraction(3,5);
+		this.fraction.div(f);
 	    assertEquals((double)7/9, this.fraction.decimal(), 0.0001);
 	}
 
