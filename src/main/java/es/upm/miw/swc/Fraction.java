@@ -71,11 +71,9 @@ public class Fraction {
     	this.denominator = auxNumerator;
     }
     
-    public Fraction div(Fraction fraction) {
+    public void div(Fraction fraction) {
     	int newNumerator, newDenominator;
-    	newNumerator = this.numerator * fraction.getDenominator();
-    	newDenominator = this.denominator * fraction.getNumerator();
-    	
-    	return new Fraction(newNumerator, newDenominator);
+    	fraction.numerator = this.numerator * fraction.getDenominator();
+    	fraction.denominator = this.denominator * fraction.getNumerator();
     }
 }
