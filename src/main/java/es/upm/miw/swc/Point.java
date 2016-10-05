@@ -41,5 +41,12 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
+
+    public int moveX(int translation){
+    	return this.x + translation;
+    }
     
+    public int moveY(int translation){
+    	return this.y + translation;
+    }
 }

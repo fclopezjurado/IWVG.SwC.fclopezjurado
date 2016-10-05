@@ -60,4 +60,19 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+
+    public void sumInt(int numberToSum) {
+    	this.numerator = this.numerator+(this.denominator*numberToSum);
+    }
+
+    public void inverseAndProduct(int numberForProductOperation) {
+    	int auxNumerator = this.numerator;
+    	this.numerator = this.denominator * numberForProductOperation;
+    	this.denominator = auxNumerator;
+    }
+    
+    public void div(Fraction fraction) {
+    	fraction.numerator = this.numerator * fraction.getDenominator();
+    	fraction.denominator = this.denominator * fraction.getNumerator();
+    }
 }
