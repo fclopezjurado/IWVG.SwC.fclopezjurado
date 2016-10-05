@@ -72,7 +72,6 @@ public class Fraction {
     }
     
     public void div(Fraction fraction) {
-    	int newNumerator, newDenominator;
     	fraction.numerator = this.numerator * fraction.getDenominator();
     	fraction.denominator = this.denominator * fraction.getNumerator();
     }
